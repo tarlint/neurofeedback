@@ -83,21 +83,32 @@ header {
 
 .logo-text {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
 }
 
 .logo h1 {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 700;
+    letter-spacing: 0.01em;
+    line-height: 1.1;
+    white-space: nowrap;
 }
 
 .service-label {
-    color: var(--secondary-color);
-    font-size: 0.9rem;
-    font-weight: 500;
-    display: block;
-    margin-top: -5px;
+    color: var(--primary-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.32rem 0.7rem;
+    border-radius: 999px;
+    background-color: var(--background-light);
+    border: 1px solid var(--border-light);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 .mobile-menu-toggle {
@@ -160,9 +171,14 @@ main {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.35rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    max-width: 10ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-content p {
@@ -231,9 +247,14 @@ main {
 
 .what-is h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2.35rem;
+    margin-bottom: 2.5rem;
     color: var(--primary-color);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    max-width: 14ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .what-is-content {
@@ -259,6 +280,8 @@ main {
 .benefits-list h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
 }
 
 .benefits-list ul {
@@ -278,9 +301,11 @@ main {
 
 .services h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2.35rem;
+    margin-bottom: 2.5rem;
     color: var(--primary-color);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
 }
 
 .services-intro {
@@ -313,7 +338,8 @@ main {
 .service-card h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
 }
 
 .service-card p {
@@ -347,9 +373,11 @@ main {
 
 .technology h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2.35rem;
+    margin-bottom: 2.5rem;
     color: var(--primary-color);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
 }
 
 .tech-content {
@@ -361,6 +389,8 @@ main {
     color: var(--primary-color);
     margin-bottom: 1rem;
     margin-top: 2rem;
+    font-size: 1.45rem;
+    line-height: 1.2;
 }
 
 .tech-text h3:first-child {
@@ -380,9 +410,11 @@ main {
 
 .process h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2.35rem;
+    margin-bottom: 2.5rem;
     color: var(--primary-color);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
 }
 
 .process-steps {
@@ -418,6 +450,8 @@ main {
 .step h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-size: 1.35rem;
+    line-height: 1.2;
 }
 
 .step p {
@@ -432,9 +466,14 @@ main {
 
 .about h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2.35rem;
+    margin-bottom: 2.5rem;
     color: var(--primary-color);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    max-width: 16ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-grid {
@@ -455,6 +494,8 @@ main {
 .about-item h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.2;
 }
 
 .about-item p {
@@ -468,9 +509,11 @@ main {
 }
 
 .contact h2 {
-    font-size: 2.5rem;
+    font-size: 2.35rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
 }
 
 .contact > p {
@@ -492,6 +535,8 @@ main {
 .contact-item h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
 }
 
 .contact-item p {
@@ -535,6 +580,30 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .logo-link {
+        gap: 0.75rem;
+    }
+
+    .logo-image {
+        height: 34px;
+    }
+
+    .logo-text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+
+    .logo h1 {
+        font-size: 1.05rem;
+        white-space: normal;
+    }
+
+    .service-label {
+        font-size: 0.68rem;
+        padding: 0.24rem 0.55rem;
+    }
+
     .mobile-menu-toggle {
         display: block;
     }
@@ -573,7 +642,7 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.35rem;
     }
 
     .hero-content p {
@@ -595,7 +664,7 @@ footer {
     .process h2,
     .about h2,
     .contact h2 {
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
 
     .services-grid {
@@ -622,8 +691,13 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .logo h1 {
+        font-size: 0.95rem;
+    }
+
     .hero-content h1 {
         font-size: 2rem;
+        max-width: 12ch;
     }
 
     .hero-content p {
