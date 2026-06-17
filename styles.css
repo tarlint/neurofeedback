@@ -910,8 +910,11 @@ main {
 
 .hero {
     background:
-        linear-gradient(135deg, rgba(255, 248, 239, 0.98), rgba(245, 234, 220, 0.94)),
-        radial-gradient(circle at 78% 14%, rgba(142, 215, 231, 0.18), transparent 28%);
+        linear-gradient(90deg, rgba(255, 248, 239, 0.96) 0%, rgba(255, 248, 239, 0.84) 34%, rgba(255, 248, 239, 0.14) 68%),
+        url('neurofeedback-hero-family.png?v=20260617a');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: #101820;
     text-align: left;
     padding: 5rem 0 4.5rem;
