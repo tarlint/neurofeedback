@@ -917,7 +917,7 @@ main {
     background-repeat: no-repeat;
     color: #101820;
     text-align: left;
-    min-height: clamp(560px, 72vh, 780px);
+    height: clamp(620px, 72vh, 780px);
     padding: 5rem 0 4.5rem;
     border-bottom: 1px solid #e3e0dc;
     display: flex;
@@ -1156,6 +1156,11 @@ footer {
     .hero,
     .hero-copy {
         text-align: center;
+    }
+
+    .hero {
+        height: clamp(620px, 72vh, 780px);
+        padding: 3.5rem 0;
     }
 
     .hero-grid {
